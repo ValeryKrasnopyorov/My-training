@@ -1,0 +1,22 @@
+#grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
+#students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+grades_Aaron = [5, 3, 3, 5, 4]
+grades_Bilbo = [2, 2, 2, 3]
+grades_Johnny = [4, 5, 5, 2]
+grades_Khendrik = [4, 4, 3]
+grades_Steve = [5, 5, 5, 4, 5]
+total= [sum(grades_Aaron), sum(grades_Bilbo), sum(grades_Johnny), sum(grades_Khendrik), sum(grades_Steve)]
+quantity_Aaron = [5, 3, 3, 5, 4]
+quantity_Bilbo = [2, 2, 2, 3]
+quantity_Johnny = [4, 5, 5, 2]
+quantity_Khendrik = [4, 4, 3]
+quantity_Steve = [5, 5, 5, 4, 5]
+quantity = (len(quantity_Aaron), len(quantity_Bilbo), len(quantity_Johnny), len(quantity_Khendrik), len(quantity_Steve))
+average_point = (sum(grades_Aaron)/len(quantity_Aaron), sum(grades_Bilbo)/len(quantity_Bilbo), sum(grades_Johnny)/len(quantity_Johnny), sum(grades_Khendrik)/len(quantity_Khendrik), sum(grades_Steve)/len(quantity_Steve))
+students = {'Johnny': sum(grades_Johnny)/len(quantity_Johnny), 'Bilbo': sum(grades_Bilbo)/len(quantity_Bilbo), 'Steve': sum(grades_Steve)/len(quantity_Steve), 'Khendrik': sum(grades_Khendrik)/len(quantity_Khendrik), 'Aaron': sum(grades_Aaron)/len(quantity_Aaron)}
+students['Aaron'] = sum(grades_Aaron)/len(quantity_Aaron)
+students['Bilbo'] = sum(grades_Bilbo)/len(quantity_Bilbo)
+students['Johnny'] = sum(grades_Johnny)/len(quantity_Johnny)
+students['Khendrik'] = sum(grades_Khendrik)/len(quantity_Khendrik)
+students['Steve'] = sum(grades_Steve)/len(quantity_Steve)
+print(students)
